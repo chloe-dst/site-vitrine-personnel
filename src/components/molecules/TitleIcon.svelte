@@ -4,17 +4,21 @@
   import Icon from "../atoms/Icon.svelte";
   import Margin from "../atoms/Margin.svelte";
   import Text from "../atoms/Text.svelte";
+
+  export let textCenter = false;
+  export let textSmall = false;
+  export let iconMargin = '180';
 </script>
  
-<div class='title-icon'>
+<div class='title-icon {textSmall ? 'title-icon--small' : 'title-icon--big'}'>
   <Text
     textTag='h1'
-    class='tag-list__title block-center text-center'
+    class="title-icon__title {textCenter ? 'block-center text-center' : ''}"
   >
     <slot />
   </Text>
 
-  <Margin marginLeft="180px">
+  <Margin marginLeft="{iconMargin}px">
     <Icon name="clickExtras" width="40" height="50" class="icon-with-title" iconColor>
       <ClickExtrasIcon />
     </Icon>
@@ -22,15 +26,37 @@
 </div>
 
 <style>
-  :global(.tag-list__title){
-    max-width: 580px;
-    font-size: 40px;
+  :global(.title-icon__title){
     font-family: var(--font-family-tercary);
+    max-width: 580px;
   }
 
-  @media screen and (max-width: 600px) {
-    :global(.tag-list__title){
+  :global(.title-icon--big){
+    font-size: 40px;
+  }
+
+  :global(.title-icon--small){
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: 750px) {
+    :global(.title-icon--small .icon-with-title){
+      margin-top: -10px;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    :global(.title-icon--big){
       font-size: 30px;
+      text-align: center;
+    }
+
+    :global(.title-icon--small){
+      font-size: 24px;
+      text-align: center;
+    }
+
+    :global(.title-icon__title .title-icon--big){
       padding: 0 var(--spacing-1);
     }
   }

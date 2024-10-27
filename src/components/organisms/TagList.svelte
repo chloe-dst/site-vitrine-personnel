@@ -6,7 +6,7 @@
 </script>
  
 <div class='tag-list'>
-  <TitleIcon>
+  <TitleIcon textCenter>
     Je vous accompagne dans la création de votre identité digitale
   </TitleIcon>
 
