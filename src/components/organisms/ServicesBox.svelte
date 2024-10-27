@@ -24,17 +24,17 @@
       <ServiceCard>
         <UiuxDesign slot="icon" /> 
         <span slot="title"> Design UI/UX et identité visuelle</span>
-        <span slot="text"> Je vous propose une expertise en design UI/UX pour des interfaces à la fois esthétiques et ergonomiques, offrant une expérience utilisateur fluide et adaptés à votre identité visuelle. <br><br> Si vous n’en avez pas encore, je peux créer pour vous une image de marque forte et en harmonie avec votre site.</span>
+        <span slot="text"> Je vous propose une expertise en design UI/UX pour des interfaces à la fois esthétiques et ergonomiques, offrant une expérience utilisateur fluide et adaptées à votre identité visuelle. <br><br> Si vous n’en avez pas encore, je peux créer pour vous une image de marque forte et en harmonie avec votre site.</span>
       </ServiceCard>
       <ServiceCard>
         <DevWebIcon slot="icon" /> 
         <span slot="title"> Développement web / e-commerce</span>
-        <span slot="text"> Je développe des sites vitrines et des boutiques en ligne modernes, adaptés à vos besoins. Pour présenter votre activité ou vendre en ligne, je conçois un site sur mesure, performant, avec une navigation intuitive et un design soigné pour attirer vos visiteurs, renforcer votre image de marque et booster vos ventes. </span>
+        <span slot="text"> Je développe des sites vitrines et des boutiques en ligne modernes, adaptés à vos besoins. Je conçois un site sur mesure, performant, avec une navigation intuitive et un design soigné pour présenter votre activité ou vendre en ligne.<br><br>  Votre site attirera vos visiteurs, renforcera votre image de marque et boostera vos ventes. </span>
       </ServiceCard>
       <ServiceCard>
         <RefonteOptimisations slot="icon" /> 
         <span slot="title"> Refonte et optimisations </span>
-        <span slot="text"> Votre site a besoin d’une mise à jour ou d’une nouvelle jeunesse ? J’analyse ses performances et son design pour proposer des améliorations qui augmenteront son efficacité. Mises à jour, refonte design, résolutions de bugs, optimisation SEO, je veille à ce que votre site reste performant et moderne.</span>
+        <span slot="text"> Votre site a besoin d’une mise à jour ou d’une nouvelle jeunesse ? J’analyse ses performances et son design pour proposer des améliorations qui augmenteront son efficacité. <br><br> Je peux vous accompagner sur la refonte de l'identité de votre site, la mise à jour de certaines pages, ou encore l'optimisation SEO.</span>
       </ServiceCard>
       <ServiceCard>
         <FormationIcon slot="icon" />

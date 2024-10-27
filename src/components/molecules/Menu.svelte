@@ -20,6 +20,13 @@
   </Link>
 
   <Link
+    linkUrl='/blog' 
+    linkColor
+  >
+    Blog
+  </Link>
+
+  <Link
     linkUrl='/contact' 
     linkColor
   >

@@ -1,6 +1,4 @@
 <script>
-  import '../../assets/css/global.css';
-    
   import Logo from '../../assets/img/logo_couleur.svg';
   import ContactImg from '../../assets/img/contact.png';
   import ArrowLeftIcon from '../../assets/icons/ArrowLeftIcon.svelte';
@@ -21,8 +19,6 @@
   import FormuleCard from '../../components/molecules/FormuleCard.svelte';
   import ContactForm from '../../components/molecules/ContactForm.svelte';
   import HeroBanner from '../../components/molecules/HeroBanner.svelte';
-  import Header from '../../components/organisms/Header.svelte';
-  import Footer from '../../components/organisms/Footer.svelte';
 </script>
     
 <Text
@@ -121,9 +117,5 @@
 </Text>
 
 <br><br>
-<Header />
-<br><br>
 <ContactForm />
-<br><br>
-<Footer />
       

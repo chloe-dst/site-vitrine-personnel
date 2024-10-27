@@ -1,6 +1,4 @@
 <script>
-  import '../../../assets/css/global.css';
-
   import Mockup1 from "../../../assets/img/mockups/inmytemple_mockup_desktop1.jpg"
   import Mockup2 from "../../../assets/img/mockups/inmytemple_mockup_desktop2.jpg"
   import Mockup3 from "../../../assets/img/mockups/inmytemple_mockup_desktop3.jpg"
@@ -8,15 +6,11 @@
 
   import Link from '../../../components/atoms/Link.svelte';
   import Image from '../../../components/atoms/Image.svelte';
-  
-  import Header from '../../../components/organisms/Header.svelte';
+
   import ImageWithDetails from '../../../components/organisms/ImageWithDetails.svelte';
   import ProjectsDetails from '../../../components/organisms/ProjectsDetails.svelte';
   import TwoColorsSquares from '../../../components/organisms/TwoColorsSquares.svelte';
-  import Footer from '../../../components/organisms/Footer.svelte';
 </script>
-
-<Header />
 
 <ImageWithDetails>
   <Image
@@ -71,5 +65,3 @@
     Me contacter
   </Link>
 </TwoColorsSquares>
-
-<Footer />

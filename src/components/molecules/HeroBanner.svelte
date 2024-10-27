@@ -1,35 +1,21 @@
 <script>
-  import Image from "../atoms/Image.svelte";
-  
-  import BackgroundDesktop from '../../assets/img/hero_banner.svg';
-  import BackgroundMobile from '../../assets/img/hero_banner_mobile.png';
-  import Logo from '../../assets/img/logo_couleur.svg';
+  export let subheading = false;
 </script>
  
 <div class='hero-banner'>
     <div class='hero-banner__background hidden-phone'>
-      <Image
-        imageSrc={BackgroundDesktop}
-        imageAlt="Background with objects representing a freelance developer"
-        imageWidth=100%
-      />
+      <slot name='imageDesktop' />
     </div>
 
     <div class='hero-banner__background hidden-desktop'>
-        <Image
-          imageSrc={BackgroundMobile}
-          imageAlt="Background with objects representing a freelance developer"
-          imageWidth=100%
-        />
+      <slot name='imageMobile' />
     </div>
 
     <div class='hero-banner__logo'>
-      <Image
-        class="block-center"
-        imageSrc={Logo}
-        imageAlt="Logo Chloé Doustalet"
-        imageWidth=100%
-      />
+      <slot name='heading' />
+      {#if subheading}
+        <slot name='subheading' />
+      {/if}
     </div>
 </div>
 
