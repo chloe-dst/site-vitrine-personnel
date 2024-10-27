@@ -17,7 +17,7 @@
   <meta name="description" content="Bienvenue sur le site de Chloé Doustalet, développeuse web freelance basée à Bordeaux. Je crée des sites vitrines et e-commerce sur mesure, alliant design moderne et expérience utilisateur optimale." />
 </svelte:head>
 
-<HeroBanner subheading>
+<HeroBanner subheading headingImage>
   <Image
     imageSrc={BackgroundDesktop}
     imageAlt="Background with objects representing a freelance developer"
@@ -33,18 +33,18 @@
 
   <Text
     textTag='h1'
-    class='long-presentation__heading text-preset-2 text-uppercase text-center'
+    class='text-preset-2 text-uppercase text-center'
     slot="heading"
-    textColor
+    textColor="color"
   >
     Le Blog
   </Text>
   <Text
     textTag='p'
-    class='long-presentation__heading text-preset-5 text-center'
+    class='text-preset-5 text-center'
     slot="subheading"
   >
-    Découvrez des articles inspirants sur le web design, l'expérience utilisateur, et les stratégies digitales pour booster votre présence en ligne. Astuces, conseils, et tendances pour un site moderne et attractif, qui transforme vos visiteurs en clients.
+    Découvrez comment optimiser votre site web. Astuces, conseils, et tendances pour avoir un site moderne et attractif, qui transforme vos visiteurs en clients et fait évoluer votre entreprise.
   </Text>
 
 </HeroBanner>

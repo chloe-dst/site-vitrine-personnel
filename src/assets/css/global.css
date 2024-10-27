@@ -296,4 +296,8 @@ hr{
   .text-preset-3{
     line-height: 24px;
   }
+
+  .text-preset-5{
+    line-height: 18px;
+  }
 }

@@ -19,7 +19,7 @@
 </svelte:head>
 
 <!-- <Header homepage/> -->
-<HeroBanner>
+<HeroBanner headerTransparent>
   <Image
     imageSrc={BackgroundDesktop}
     imageAlt="Background with objects representing a freelance developer"
