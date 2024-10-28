@@ -75,7 +75,7 @@
     <ClickableImage linkUrl="/projets/havre-de-paix">
       <Image
         imageSrc={MockupHavrePaix}
-        imageAlt="Mockup du site web Havre de paix maquetté et développé par Chloé Doustaletx"
+        imageAlt="Mockup du site web Havre de paix maquetté et développé par Chloé Doustalet"
         imageWidth=100%
         slot="image"
       />

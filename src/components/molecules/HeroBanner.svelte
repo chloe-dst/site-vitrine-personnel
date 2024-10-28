@@ -47,7 +47,7 @@
     margin-bottom: var(--spacing-1);
   }
 
-  @media screen and (max-width: 1100px){
+  @media screen and (max-width: 900px){
     :global(.hero-banner__title h1) {
       font-size: 110px;
       margin-bottom: var(--spacing-1);
@@ -62,7 +62,7 @@
     }
   }
 
-  @media screen and (min-width: 750px) and (max-width: 1000px){
+  @media screen and (min-width: 750px) and (max-width: 900px){
     .hero-banner__logo{
       width: 30%;
     }
@@ -76,6 +76,12 @@
 
     :global(.hero-banner__title h1) {
       margin-top: var(--spacing-2);
+    }
+  }
+
+  @media screen and (min-width: 900px) and (max-width: 1200px){
+    :global(.hero-banner__title h1) {
+      font-size: 90px;
     }
   }
 </style>
