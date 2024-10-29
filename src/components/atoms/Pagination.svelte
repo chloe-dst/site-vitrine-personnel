@@ -42,7 +42,7 @@
         <SimpleArrowLeftIcon />
       </Icon>     
     </button>
-    <p><span class="current-pagination">{currentPage + 1}</span> - {totalPages}</p>
+    <p><span class="text--bold">{currentPage + 1}</span> - {totalPages}</p>
     <button on:click={() => currentPage += 1} 
       disabled={currentPage === totalPages - 1 ? true : false} 
       aria-label="right arrow icon" 
@@ -83,9 +83,5 @@
   	display: flex;
     background: transparent;
     border: none;
-  }
-
-  .current-pagination{
-    font-weight: var(--font-weight-semibold);
   }
 </style>

@@ -1,6 +1,11 @@
 <script>
-	export let data;
+  import ArticleContent from "../../../components/organisms/ArticleContent.svelte";
+  import ArticleRecommendations from "../../../components/organisms/ArticleRecommendations.svelte";
+  import InlinePresentation from "../../../components/organisms/InlinePresentation.svelte";
+ 
+  export let data;
 </script>
 
-<h1>{data.post.title}</h1>
-<div>{@html data.post.content}</div>
+<ArticleContent data={data.post} />
+<ArticleRecommendations data={data.summaries} />
+<InlinePresentation />

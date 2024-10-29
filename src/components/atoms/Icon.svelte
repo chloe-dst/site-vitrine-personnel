@@ -8,7 +8,7 @@
   export let height = "30";
 </script>
 
-<div style='width:{width}px; height:{height}px' class={$$props.class}>
+<div style='width:{width}px; height:{height}px' class='icon {$$props.class}'>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     aria-labelledby={name}

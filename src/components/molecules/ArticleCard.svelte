@@ -1,6 +1,7 @@
 <script>
   import Icon from "../atoms/Icon.svelte";
   import Link from "../atoms/Link.svelte";
+  import Text from "../atoms/Text.svelte";
   
   import ArrowBackgroundIcon from "../../assets/icons/ArrowBackgroundIcon.svelte";
 
@@ -8,18 +9,20 @@
 </script>
 
 <div class="article-card">
-  <slot name="image" />
-  <Link linkUrl={articleUrl}> 
-    <slot name="linkName" />
-  </Link>
-  <div class="link-arrow">
-    <div class="blog-circle"> </div>
-    <Link linkUrl="{articleUrl}">
+  <Link linkUrl="{articleUrl}">
+    <slot name="image" /> 
+    <Text
+      textTag='h2'
+    >
+      <slot name="linkName" />
+    </Text>
+    <div class="link-arrow">
+      <div class="blog-circle"> </div>
       <Icon name="Arrow_background" width="80" height="80" iconColor>
         <ArrowBackgroundIcon />
       </Icon>
-    </Link>
-  </div>
+    </div>
+  </Link>
 </div>
 
 <style>
@@ -33,8 +36,9 @@
     padding: 0;
   }
 
-  :global(.blog-container img){
+  :global(.article-card img){
     border-radius: var(--large-radius) var(--large-radius) 0 0;
+    height: 260px;
   }
 
   .blog-circle{
@@ -47,7 +51,7 @@
     bottom: -15px;
   }
 
-  :global(.blog-container .article-card > .link){
+  :global(.article-card h2){
     width: 68%;
     height: 85px;
     font-size: 20px;
@@ -57,7 +61,7 @@
     line-height: 26px;
   }
 
-  :global(.link-arrow .link){
+  :global(.link-arrow .icon){
     position: absolute;
     right: 0;
     bottom: 0;

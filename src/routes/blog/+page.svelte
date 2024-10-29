@@ -46,7 +46,6 @@
   >
     Découvrez comment optimiser votre site web. Astuces, conseils, et tendances pour avoir un site moderne et attractif, qui transforme vos visiteurs en clients et fait évoluer votre entreprise.
   </Text>
-
 </HeroBanner>
 <Blog data={data} />
 <InlinePresentation />
