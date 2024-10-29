@@ -41,4 +41,14 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media screen and (max-width: 750px) {
+    .article-recommendations-container{
+      padding: var(--spacing-4) var(--spacing-5);
+    }
+
+    .article-recommendations{
+      flex-wrap: wrap;
+    }
+  }
 </style>

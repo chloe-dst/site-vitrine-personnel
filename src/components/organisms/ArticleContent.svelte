@@ -32,7 +32,7 @@
     </Text>
   
     <Margin marginTop="var(--spacing-5)" marginBottom="var(--spacing-5)">
-      <ul class="article-table-content w-50">
+      <ul class="article-table-content">
         <Text
           textTag='h3'
           class='text-preset-5 text--bold'
@@ -97,5 +97,21 @@
   :global(.article-content__main p){
     font-weight: var(--font-weight-regular);
     line-height: 1.4;
+  }
+
+  @media screen and (min-width: 750px) {
+    .article-table-content{
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .article-content{
+      padding: var(--spacing-5);
+    }
+
+    :global(.article-content img){
+      width: -webkit-fill-available;
+    }
   }
 </style>

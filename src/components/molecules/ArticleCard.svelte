@@ -66,4 +66,29 @@
     right: 0;
     bottom: 0;
   }
+
+  @media screen and (max-width: 900px) {
+    :global(.article-card h2) {
+      max-width: 300px;
+      font-size: 17px;
+      width: 60%;
+      height: 100px;
+    } 
+  }
+
+  @media screen and (min-width: 750px) and (max-width: 900px) {
+    :global(.article-card, .article-card img) {
+      width: 300px;
+    } 
+
+    :global(.article-card h2) {
+      max-width: 300px;
+    } 
+  }
+
+  @media screen and (max-width: 750px) {
+   :global(.article-card, .article-card img){
+       width: 100%;
+     }
+  }
 </style>

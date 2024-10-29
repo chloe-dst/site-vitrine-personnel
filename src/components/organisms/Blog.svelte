@@ -38,5 +38,11 @@
     row-gap: var(--spacing-5);
     margin: var(--spacing-4);
   }
+
+  @media screen and (max-width: 750px) {
+    .blog-container{
+      margin: var(--spacing-4) var(--spacing-5);
+    }
+  }
 </style>
   
