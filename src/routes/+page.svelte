@@ -11,15 +11,17 @@
 	import ArmsBloc from '../components/organisms/ArmsBloc.svelte';
 
   import Image from '../components/atoms/Image.svelte';
+  import Text from '../components/atoms/Text.svelte';
+	import Reviews from '../components/organisms/Reviews.svelte';
 </script>
 
 <svelte:head>
-  <title>Chloé Doustalet Développeuse Web Freelance à Bordeaux | Création de Sites Personnalisés</title>
-  <meta name="description" content="Bienvenue sur le site de Chloé Doustalet, développeuse web freelance basée à Bordeaux. Je crée des sites vitrines et e-commerce sur mesure, alliant design moderne et expérience utilisateur optimale." />
+  <title>Chloé Doustalet – Création sites web WordPress et Shopify</title>
+  <meta name="description" content="Développeuse web freelance à Bordeaux, spécialisée WordPress et Shopify. Je conçois des sites vitrines et e-commerce sur mesure, avec un design soigné et une expérience utilisateur optimale" />
 </svelte:head>
 
 <!-- <Header homepage/> -->
-<HeroBanner headerTransparent>
+<HeroBanner subheading="true" headerTransparent>
   <Image
     imageSrc={BackgroundDesktop}
     imageAlt="Background with objects representing a freelance developer"
@@ -39,9 +41,16 @@
     imageWidth=100%
     slot="heading"
   />
+  <Text
+    textTag='h1'
+    slot="subheading"
+  >
+    Des sites web pensés pour convertir
+  </Text>
 </HeroBanner>
 <TagList />
 <ServicesBox />
 <MainProjects />
 <ShortPresentation />
+<Reviews />
 <ArmsBloc />

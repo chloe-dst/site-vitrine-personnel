@@ -7,12 +7,12 @@
 
   export let textCenter = false;
   export let textSmall = false;
-  export let iconMargin = '180';
+  export let iconMargin = '400';
 </script>
  
 <div class='title-icon {textSmall ? 'title-icon--small' : 'title-icon--big'}'>
   <Text
-    textTag='h1'
+    textTag='h2'
     class="title-icon__title {textCenter ? 'block-center text-center' : ''}"
   >
     <slot />

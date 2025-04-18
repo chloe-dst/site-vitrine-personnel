@@ -16,8 +16,8 @@
 </script>
 
 <svelte:head>
-  <title>Chloé Doustalet Développeuse Web Freelance à Bordeaux | Création de Sites Personnalisés</title>
-  <meta name="description" content="Bienvenue sur le site de Chloé Doustalet, développeuse web freelance basée à Bordeaux. Je crée des sites vitrines et e-commerce sur mesure, alliant design moderne et expérience utilisateur optimale." />
+  <title>Chloé Doustalet – Création sites web sur mesure</title>
+  <meta name="description" content="En tant que développeuse web freelance à Bordeaux je conçois des sites vitrines et e-commerce sur mesure pensés pour convertir." />
 </svelte:head>
 
 <HeroBanner>

@@ -8,7 +8,7 @@
   import PersonalPhoto from '../../assets/img/chloe-doustalet.png';
 
   export let marginTop = "0";
-  export let marginBottom = "0";
+  export let marginBottom = "80px";
 </script>
  
 <div class='short-presentation' style='padding-top: {marginTop}; padding-bottom: {marginBottom};'>

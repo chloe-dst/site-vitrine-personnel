@@ -75,7 +75,7 @@
   :global(.cards-mix__cards .formule-card:nth-child(4)){
     position: absolute;
     top: 420px;
-    left: 180px;
+    left: 400px;
     transform: rotate(10deg);
   }
 

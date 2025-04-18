@@ -25,4 +25,7 @@
 </div>
 
 <style>
+  :global(.clickable-image a, .clickable-image img){
+    height: 100%;
+  }
 </style>

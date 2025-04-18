@@ -12,7 +12,7 @@ export const posts = [
   {
     id: 2,
     slug: "optimisation-site-mobile",
-    title: 'Pourquoi Votre site Devrait être mieux optimisé pour mobile ?',
+    title: 'Pourquoi votre site devrait être mieux optimisé pour mobile ?',
     image: '/blog/blog2-site-mobile-friendly-optimisation.png',
     duration: '4 min',
     intro: "L’optimisation mobile n’est plus une option, c’est une nécessité. Aujourd’hui, plus de la moitié des utilisateurs accèdent à internet depuis leur smartphone. Si la version mobile de votre site n’est pas optimisée, vous risquez de perdre une part importante de votre audience.", 

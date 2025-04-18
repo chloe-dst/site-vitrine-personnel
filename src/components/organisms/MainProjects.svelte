@@ -38,7 +38,7 @@
       <Image
         imageSrc={MockupBlomea}
         imageAlt="Mockup du site vitrine Blomea Studio développé par Chloé Doustalet"
-        imageWidth=50%
+        imageWidth=100%
         imageHeight=298
         slot="image"
       />
@@ -74,6 +74,7 @@
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 50% 50%;
     column-gap: var(--spacing-1);
+    row-gap: var(--spacing-1);
   }
 
   :global(.main-projects__mosaic .clickable-image:first-child){
@@ -82,7 +83,7 @@
   }
 
   :global(.main-projects__mosaic .clickable-image:nth-child(2)){
-    grid-column: 3 / 5;
+    grid-column: 3 / 4;
     grid-row: 1 / 2;  
   }
 
@@ -100,6 +101,11 @@
       width: calc(100% - 60px);
       column-gap: 10px;
       row-gap: 10px;
+    }
+
+    :global(.main-projects__mosaic .clickable-image:nth-child(2)){
+      grid-column: 3 / 5;
+      grid-row: 1 / 2;  
     }
   }
 
@@ -120,5 +126,11 @@
       width: 100%;
       height: 250px;
     } 
+  }
+
+  @media screen and (min-width: 1200px) {
+    .main-projects__mosaic{
+      width: calc(100% - 60px)
+    }
   }
 </style>

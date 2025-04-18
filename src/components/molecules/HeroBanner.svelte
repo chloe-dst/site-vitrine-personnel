@@ -2,6 +2,9 @@
   export let subheading = false;
   export let headerTransparent = false;
   export let headingImage = false;
+
+  import Button from "../atoms/Button.svelte";
+  import Text from "../atoms/Text.svelte";
 </script>
  
 <div class='hero-banner {headerTransparent ? 'hero-banner--transparent' : ''}'>
@@ -16,8 +19,14 @@
     <div class="{headingImage ? 'hero-banner__title' : 'hero-banner__logo'}">
       <slot name='heading' />
       {#if subheading}
-        <slot name='subheading' />
+        <Text
+          textTag='h1'
+          class='text-preset-3 text-center hero-banner__subheading'
+        >
+          <slot name='subheading' />
+        </Text>
       {/if}
+      <Button class="hero-banner__button" on:click={() => window.open("https://calendly.com/chloe-doustalet/30min", "_blank")}> Réserver un appel </Button>
     </div>
 </div>
 
@@ -42,12 +51,32 @@
     width: 30%;
   }
 
+  :global(.hero-banner__subheading){
+    padding-top: var(--spacing-1);
+  }
+
   :global(.hero-banner__title h1){
     font-size: 130px;
     margin-bottom: var(--spacing-1);
   }
 
+  :global(.hero-banner__button){
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--spacing-1) !important;
+  }
+
   @media screen and (max-width: 900px){
+    :global(.hero-banner__title, .hero-banner__logo){
+      width: 40% !important;
+    }
+
+    :global(.title-icon > .margin){
+      margin-left: 0 !important;
+      margin-top: var(--spacing-1) !important;
+    }
+
     :global(.hero-banner__title h1) {
       font-size: 110px;
       margin-bottom: var(--spacing-1);
@@ -64,7 +93,7 @@
 
   @media screen and (min-width: 750px) and (max-width: 900px){
     .hero-banner__logo{
-      width: 30%;
+      width: 50%;
     }
 
     .hero-banner__title{

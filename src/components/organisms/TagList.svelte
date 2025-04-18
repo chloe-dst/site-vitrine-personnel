@@ -7,7 +7,7 @@
  
 <div class='tag-list'>
   <TitleIcon textCenter>
-    Je vous accompagne dans la création de votre identité digitale
+    Je crée des sites internet sur mesure conçus pour faire grandir votre activité
   </TitleIcon>
 
   <Margin marginTop="175px" marginBottom="40px">
