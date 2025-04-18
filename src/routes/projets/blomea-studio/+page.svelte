@@ -25,7 +25,7 @@
   <span slot="tag2"> Formation </span>
 </ImageWithDetails>
 
-<ProjectsDetails urlLeft='/projets/havre-de-paix' urlRight='/projets/stores-sud' >
+<ProjectsDetails urlLeft='/projets/combi-du-bassin/' urlRight='/projets/peulh-vagabond/' >
   <span slot="description"> 
     Création d'un site web pour un studio de design, développé à partir de maquettes fournies par le studio. Mon objectif était de réaliser un site responsive et pixel perfect, fidèle à l'identité visuelle du client. Chaque détail a été intégré avec précision pour garantir une expérience utilisateur optimale sur tous les appareils. J'ai également formé l'équipe à l’utilisation du back-office afin qu'elle puisse gérer son contenu de manière autonome et mettre à jour le site selon ses besoins.   
   </span>

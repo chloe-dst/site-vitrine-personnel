@@ -25,7 +25,7 @@
   <span slot="tag2"> Développement web </span>
 </ImageWithDetails>
 
-<ProjectsDetails nbList=4 urlLeft='/projets/in-my-temple' urlRight='/projets/havre-de-paix' >
+<ProjectsDetails nbList=4 urlLeft='/projets/in-my-temple' urlRight='/projets/stores-sud' >
   <span slot="description">    
     Réalisation des maquettes pour un site de réservation de vans/combis offrant une large gamme de services : road trips, tours guidés, photobooth, évènements, et bien plus. Le défi principal était de présenter cette diversité de manière claire et attrayante. L’univers visuel s’inspire du Bassin d’Arcachon, avec des couleurs évoquant la mer et l’ambiance surf.  J'ai conçu un design qui met en valeur cette diversité de services tout en offrant une expérience utilisateur fluide. Le développement du site est en cours, avec une attention particulière portée à l’ergonomie.
   </span>

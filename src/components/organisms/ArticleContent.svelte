@@ -99,6 +99,12 @@
     line-height: 1.4;
   }
 
+  :global(.article-content__tips){
+    padding: 40px;
+    background-color: var(--color-background-primary);
+    border-radius: var(--large-radius);
+  }
+
   @media screen and (min-width: 750px) {
     .article-table-content{
       width: 50%;

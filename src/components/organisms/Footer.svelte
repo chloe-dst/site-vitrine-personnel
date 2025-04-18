@@ -46,7 +46,7 @@
       class='copyright-text text--light text-right w-100'
       textColor='white'
     >
-      Copyright (c) 2024 - Chloé Doustalet - <a href="/mentions-legales">Mentions légales</a>
+      Copyright (c) 2024 - Chloé Doustalet - <a href="/mentions-legales/">Mentions légales</a>
     </Text>
   </Margin>
 </div>

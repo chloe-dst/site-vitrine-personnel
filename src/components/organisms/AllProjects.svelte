@@ -4,11 +4,17 @@
   import Image from "../atoms/Image.svelte";
   import ClickableImage from "../molecules/ClickableImage.svelte";
 
-  import MockupInMyTemple from "../../assets/img/mockups/inmytemple_mockup_desktop2.jpg"
-  import MockupStoresSud from "../../assets/img/mockups/storessud_mockup_mobile.jpg"
-  import MockupCombiBassin from "../../assets/img/mockups/combibassin_mockup_desktop1.jpg"
-  import MockupBlomeaStudio from "../../assets/img/mockups/blomea_mockup_desktop2.jpg"
-  import MockupHavrePaix from "../../assets/img/mockups/havrepaix_mockup_mobile.jpg"
+  import MockupInMyTemple from "../../assets/img/mockups/inmytemple_mockup_desktop2.jpg";
+  import MockupStoresSud from "../../assets/img/mockups/storessud_mockup_mobile.jpg";
+  import MockupCombiBassin from "../../assets/img/mockups/combibassin_mockup_desktop1.jpg";
+  import MockupBlomeaStudio from "../../assets/img/mockups/blomea_mockup_desktop2.jpg";
+  import MockupHavrePaix from "../../assets/img/mockups/havrepaix_mockup_mobile.jpg";
+  import MockupTendancePaysage from "../../assets/img/mockups/tendance-paysage-site-vitrine-responsive-petite-entreprise-merignac.jpg";
+  import MockupZephyrade from "../../assets/img/mockups/zephyrade-refonte-page-site-ecommerce-joaillerie-bordeaux.jpg";
+  import MockupPeulhVagabond from "../../assets/img/mockups/peulh-vagabond-creation-site-ecommerce-mode-bordeaux.jpg";
+  import MockupMasmud from "../../assets/img/mockups/masmud-site-ecommerce-mode-personnalise-merignac.jpg";
+  import MockupBiomeConseil from "../../assets/img/mockups/biome-conseil-creation-site-vitrine-formateur-bordeaux.jpg";
+  import MockupNSFDev from "../../assets/img/mockups/nfsdev-responsive-design-site-developpeuse-web-bordeaux.jpg";
 </script>
 
 <div class='all-projects'>
@@ -72,37 +78,66 @@
       <span slot="title"> Blomea Studio </span>
     </ClickableImage>
 
-    <ClickableImage linkUrl="/projets/havre-de-paix">
+    <ClickableImage linkUrl="/projets/peulh-vagabond/">
       <Image
-        imageSrc={MockupHavrePaix}
-        imageAlt="Mockup du site web Havre de paix maquetté et développé par Chloé Doustalet"
+        imageSrc={MockupPeulhVagabond}
+        imageAlt="Mockup du site web par Chloé Doustalet"
         imageWidth=100%
         slot="image"
+        class="img-position-left"
       />
-      <span slot="title"> Havre de paix </span>
+      <span slot="title"> Peulh Vagabond</span>
     </ClickableImage>
 
-    <!--
-    <ClickableImage linkUrl="/projets/bloma-studio">
+    <ClickableImage linkUrl="/projets/masmud/">
       <Image
-        imageSrc={ImageProjet}
-        imageAlt="Mockup du projet xxxxxxxx"
+        imageSrc={MockupMasmud}
+        imageAlt="Mockup du projet MASMUD"
         imageWidth=100%
         slot="image"
       />
-      <span slot="title"> Nom projet </span>
+      <span slot="title"> MASMUD </span>
     </ClickableImage>
   
-    <ClickableImage linkUrl="/projets/biome-conseil">
+    <ClickableImage linkUrl="/projets/tendance-paysage/">
       <Image
-        imageSrc={ImageProjet}
-        imageAlt="Mockup du projet xxxxxxxx"
+        imageSrc={MockupTendancePaysage}
+        imageAlt="Mockup du projet Tendance paysage développé par Chloé Doustalet"
         imageWidth=100%
         slot="image"
       />
-      <span slot="title"> Nom projet </span>
+      <span slot="title"> Tendance Paysage </span>
     </ClickableImage>
-  -->
+
+    <ClickableImage linkUrl="/projets/biome-conseil">
+      <Image
+        imageSrc={MockupBiomeConseil}
+        imageAlt="Mockup du site internet Biome Conseil développé par Chloé Doustalet"
+        imageWidth=100%
+        slot="image"
+      />
+      <span slot="title"> BIOME Conseil </span>
+    </ClickableImage>
+
+    <ClickableImage linkUrl="/projets/zephyrade/">
+      <Image
+        imageSrc={MockupZephyrade}
+        imageAlt="Mockup du site web Zephyrade par Chloé Doustalet"
+        imageWidth=100%
+        slot="image"
+      />
+      <span slot="title"> Zephyrade </span>
+    </ClickableImage>
+
+    <ClickableImage linkUrl="/projets/nsfdev/">
+      <Image
+        imageSrc={MockupNSFDev}
+        imageAlt="Mockup du site web NSFDev maquetté par Chloé Doustalet"
+        imageWidth=100%
+        slot="image"
+      />
+      <span slot="title"> NSFDev </span>
+    </ClickableImage>
   </div>
 
   <div class="all-projects__label">
@@ -141,9 +176,7 @@
   .all-projects__mosaic{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 345px);
-    /* To reactivate when I will have 2 more projects to show
-    grid-template-rows: repeat(5, 345px); */
+    grid-template-rows: repeat(2, 345px) 475px 415px 345px;
     column-gap: var(--spacing-1);
     row-gap: var(--spacing-1);
     margin-bottom: var(--spacing-1);
@@ -180,12 +213,31 @@
 
   :global(.all-projects__mosaic .clickable-image:nth-child(6)){
     grid-column: 1 / 3;
-    grid-row: 4 / 6;  
+    grid-row: 4 / 5;  
   }
 
   :global(.all-projects__mosaic .clickable-image:nth-child(7)){
     grid-column: 3 / 5;
-    grid-row: 4 / 6;  
+    grid-row: 4 / 5;  
+  }
+
+  :global(.all-projects__mosaic .clickable-image:nth-child(8)){
+    grid-column: 1 / 2;
+    grid-row: 5 / 6; 
+  }
+
+  :global(.all-projects__mosaic .clickable-image:nth-child(9)){
+    grid-column: 2 / 4;
+    grid-row: 5 / 6; 
+  }
+
+  :global(.all-projects__mosaic .clickable-image:nth-child(10)){
+    grid-column: 4 / 5;
+    grid-row: 5 / 6; 
+  }
+
+  :global(.all-projects__mosaic .clickable-image:nth-child(10) img){
+    object-position: 20% 80%;
   }
 
   .all-projects hr{
@@ -201,22 +253,19 @@
 
     .all-projects__mosaic{
       grid-template-rows: repeat(2, 200px);
-      /* To reactivate when I will have 2 more projects to show
-      grid-template-rows: repeat(5, 200px);*/
+      grid-template-rows: repeat(5, 200px);
     }
 
     :global(.all-projects__mosaic .clickable-image:nth-child(4)){
       grid-column: 1 / 4;
     }
 
-    /* To reactivate if I add 2 more projects
     :global(.all-projects__mosaic .clickable-image:nth-child(6)){
       display: none;
     }
     :global(.all-projects__mosaic .clickable-image:nth-child(7)){
       display: none;
     }
-    */
   }
 
   @media screen and (max-width: 700px){

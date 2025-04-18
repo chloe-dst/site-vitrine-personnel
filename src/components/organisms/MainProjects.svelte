@@ -9,7 +9,7 @@
 
   import MockupInMyTemple from "../../assets/img/mockups/inmytemple_mockup_desktop2.jpg"
   import MockupCombiBassin from "../../assets/img/mockups/combibassin_mockup_desktop1.jpg"
-  import MockupHavrePaix from "../../assets/img/mockups/havrepaix_mockup_mobile.jpg"
+  import MockupBlomea from "../../assets/img/mockups/blomea_mockup_mobile.jpg"
 </script>
  
 <div class='main-projects'>
@@ -34,15 +34,15 @@
       <span slot="title"> In my temple </span>
     </ClickableImage>
 
-    <ClickableImage linkUrl="/projets/havre-de-paix">
+    <ClickableImage linkUrl="/projets/blomea-studio">
       <Image
-        imageSrc={MockupHavrePaix}
-        imageAlt="Mockup du site internet Havre de paix développé par Chloé Doustalet"
+        imageSrc={MockupBlomea}
+        imageAlt="Mockup du site vitrine Blomea Studio développé par Chloé Doustalet"
         imageWidth=50%
         imageHeight=298
         slot="image"
       />
-      <span slot="title"> Havre de paix </span>
+      <span slot="title"> Blomea Studio </span>
     </ClickableImage>
 
     <ClickableImage linkUrl="/projets/combi-du-bassin">
@@ -84,10 +84,6 @@
   :global(.main-projects__mosaic .clickable-image:nth-child(2)){
     grid-column: 3 / 5;
     grid-row: 1 / 2;  
-  }
-
-  :global(.main-projects__mosaic .clickable-image:nth-child(2) img){
-    object-position: center -120px;  
   }
 
   :global(.main-projects__mosaic .clickable-image:last-child){

@@ -291,6 +291,18 @@ hr{
   font-weight: var(--font-weight-light);
 }
 
+.link--underlined{
+  text-decoration: underline;
+}
+
+.img-position-right{
+  object-position: right;
+}
+
+.img-position-left{
+  object-position: left;
+}
+
 @media screen and (max-width: 600px) {
   .text-preset-1{
     border-left: solid 6px var(--black);

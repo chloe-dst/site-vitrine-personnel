@@ -33,3 +33,6 @@ export function load({ params }) {
 	};
 }
 
+export const entries = () => {
+	return posts.map((post) => ({ slug: post.slug }));
+};

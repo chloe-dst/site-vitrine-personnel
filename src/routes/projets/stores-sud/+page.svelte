@@ -26,7 +26,7 @@
   <span slot="tag3"> Développement web </span>
 </ImageWithDetails>
 
-<ProjectsDetails urlLeft='/projets/blomea-studio' urlRight='/projets/in-my-temple' >
+<ProjectsDetails urlLeft='/projets/combi-du-bassin' urlRight='/projets/blomea-studio' >
   <span slot="description">    
     Refonte du site de Stores Sud, une entreprise proposant une large gamme de stores, garages et protections solaires. J'ai d'abord assuré la migration vers un nouvel hébergeur, puis développé les maquettes pour un site moderne et efficace. L’enjeu principal était de rendre l'ensemble de leur offre accessible et ergonomique, facilitant ainsi la navigation et la recherche de produits. Le développement du site est en cours, avec une attention particulière portée à l’organisation des produits et à l’expérience utilisateur.
   </span>

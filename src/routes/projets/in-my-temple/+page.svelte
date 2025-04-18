@@ -25,7 +25,7 @@
   <span slot="tag2"> Formation </span>
 </ImageWithDetails>
 
-<ProjectsDetails urlLeft='/projets/stores-sud' urlRight='/projets/combi-du-bassin' >
+<ProjectsDetails urlLeft='/projets/nsfdev/' urlRight='/projets/combi-du-bassin' >
   <span slot="description"> 
     Développement d’un site web pour une professeure de yoga et masseuse, à partir des maquettes fournies par la cliente. J'ai personnalisé un thème enfant sur WordPress pour créer un site qui reflète parfaitement son univers. La version mobile a été optimisée pour offrir une expérience fluide sur tous les appareils. J'ai également assuré une formation complète au back-office, permettant à la cliente de gérer ses contenus et d’alimenter son blog de manière autonome et indépendante.   
   </span>
