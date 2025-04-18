@@ -41,6 +41,7 @@
   .nav{
     width: calc(100% - 210px);
     display: flex;
+    flex-wrap: wrap;
     justify-content: end;
     align-items: center;
     column-gap: 60px;

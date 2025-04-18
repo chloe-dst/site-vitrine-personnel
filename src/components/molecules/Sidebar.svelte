@@ -89,4 +89,14 @@
     margin-top: 20px;
     margin-bottom: 5px;
   }
+
+  @media screen and (max-width: 750px){
+    :global(.sidebar .nav a){
+      width: 100%;
+    }
+
+    :global(.sidebar .nav a:nth-last-of-type(1)){
+      margin-bottom: var(--spacing-5);
+    }
+  }
 </style>

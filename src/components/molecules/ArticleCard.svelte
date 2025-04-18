@@ -52,7 +52,7 @@
   }
 
   :global(.article-card h2){
-    width: 68%;
+    width: 67%;
     height: 85px;
     font-size: 20px;
     font-family: var(--font-family-tercary);
