@@ -17,7 +17,7 @@
 
 <svelte:head>
   <title>Chloé Doustalet – Création sites web WordPress et Shopify</title>
-  <meta name="description" content="Développeuse web freelance à Bordeaux, spécialisée WordPress et Shopify. Je conçois des sites vitrines et e-commerce sur mesure, avec un design soigné et une expérience utilisateur optimale" />
+  <meta name="description" content="Développeur web freelance à Bordeaux, spécialisée WordPress et Shopify. Je conçois des sites vitrines et e-commerce sur mesure, avec un design soigné et une expérience utilisateur optimale" />
 </svelte:head>
 
 <!-- <Header homepage/> -->
@@ -51,6 +51,6 @@
 <TagList />
 <ServicesBox />
 <MainProjects />
-<ShortPresentation />
+<ShortPresentation> Je me présente </ShortPresentation>
 <Reviews />
 <ArmsBloc />

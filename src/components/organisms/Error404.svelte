@@ -3,7 +3,7 @@
   import Text from "../atoms/Text.svelte";
   import Link from "../atoms/Link.svelte";
 
-  import Image404 from "../../assets/img/404_illustration.svg"; 
+  import Image404 from "/404_illustration.svg"; 
 </script>
 
 <div class='error-404'>

@@ -16,7 +16,7 @@
     textTag='h2'
     class='short-presentation__title text-preset-2 text-center block-center'
   >
-    Je me presente
+    <slot/>
   </Text>
 
   <Image

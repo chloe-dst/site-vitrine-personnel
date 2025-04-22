@@ -41,7 +41,7 @@
     slot="heading"
   />
 </HeroBanner>
-<ShortPresentation marginTop="var(--spacing-2)" marginBottom="var(--spacing-2)"/>
+<ShortPresentation marginTop="var(--spacing-2)" marginBottom="var(--spacing-2)"> Je me présente </ShortPresentation>
 <CardsMix />
 <MainProjects />
 <TwoColorsSquares>
