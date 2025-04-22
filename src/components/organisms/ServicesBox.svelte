@@ -23,8 +23,10 @@
     <div class="services-box__cards">
       <ServiceCard>
         <UiuxDesign slot="icon" /> 
-        <span slot="title"> Design UI/UX et identité visuelle</span>
-        <span slot="text"> Je vous propose une expertise en design UI/UX pour des interfaces à la fois esthétiques et ergonomiques, offrant une expérience utilisateur fluide et adaptées à votre identité visuelle. <br><br> Si vous n’en avez pas encore, je peux créer pour vous une image de marque forte et en harmonie avec votre site.</span>
+        <span slot="title"> Web Design & Image de marque</span>
+        <span slot="text"> Vous partez de zéro ou votre identité visuelle mérite un coup de frais ? Je vous accompagne dans la création d’une image de marque forte et cohérente, en lien direct avec votre site web.
+          <br><br>Spécialisée en design UI/UX, je conçois des interfaces à la fois esthétiques, intuitives et pensées pour vos utilisateurs. Chaque élément est travaillé pour convertir.
+        </span>
       </ServiceCard>
       <ServiceCard>
         <DevWebIcon slot="icon" /> 
@@ -38,8 +40,11 @@
       </ServiceCard>
       <ServiceCard>
         <FormationIcon slot="icon" />
-        <span slot="title"> Maintenance, formation et accompagnement </span>
-        <span slot="text"> Au-delà du développement, je vous accompagne dans la gestion quotidienne de votre site. Mises à jour, résolutions de bugs, formations sur mesure, je veille à ce que votre site reste performant et à jour. <br><br> Nous pouvons aussi travailler ensemble sur votre identité digitale au global (newsletter, emailing, création contenu). </span>
+        <span slot="title"> SEO, Emailing, Contenu, Google My Business... </span>
+        <span slot="text"> 
+          Besoin de mieux communiquer et d’être plus visible en ligne ? 
+          <br><br> Je vous accompagne sur le référencement naturel, la rédaction de contenus optimisés, l'emailing, l’envoi de newsletters, ou encore l’optimisation de votre fiche Google My Business pour booster votre présence locale et attirer les bons visiteurs.
+        </span>
       </ServiceCard>
     </div>
 

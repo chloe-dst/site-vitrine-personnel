@@ -44,4 +44,16 @@
         column-gap: var(--spacing-4);
         align-items: center;
     }
+
+    @media screen and (max-width: 750px){
+        .image-header{
+            padding: var(--spacing-1) var(--spacing-5) var(--spacing-4);
+            flex-wrap: wrap;
+            row-gap: var(--spacing-5);
+        }
+
+        :global(.image-header img){
+            width: 100%;
+        }
+    }
 </style>

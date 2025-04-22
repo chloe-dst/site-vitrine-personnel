@@ -4,6 +4,7 @@
   import MissionsList from  '../../components/organisms/MissionsList.svelte';
   import LongPresentation from  '../../components/organisms/LongPresentation.svelte';
   import CardsMix from  '../../components/organisms/CardsMix.svelte';
+  import Reviews from '../../components/organisms/Reviews.svelte';
 </script>
 
 <svelte:head>
@@ -14,3 +15,4 @@
 <MissionsList />
 <LongPresentation />
 <CardsMix />
+<Reviews bgColor="var(--color-background-secondary)" />

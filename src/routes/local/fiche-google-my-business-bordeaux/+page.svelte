@@ -1,7 +1,7 @@
 <script>
   import '../../../assets/css/global.css';
 
-  import MockupImage from '../../../assets/img/mockups/blomea_mockup_mobile.jpg';
+  import MockupImage from '/blog/blog6-avantages-fiche-google-business-bien-optimise.jpg';
 
   import ShortPresentation from '../../../components/organisms/ShortPresentation.svelte';
   import CardsMix from '../../../components/organisms/CardsMix.svelte';

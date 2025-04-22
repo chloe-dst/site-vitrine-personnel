@@ -44,6 +44,7 @@
 
   :global(.service-title){
     font-size: 20px;
+    line-height: 1.2;
   }
 
   @media screen and (min-width: 1100px) {

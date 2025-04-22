@@ -1,9 +1,11 @@
 <script>
+    export let bgColor = 'var(--color-background-primary)';
+
     import ReviewCard from "../molecules/ReviewCard.svelte";
     import MobileMockup from "../../assets/img/mockups/nfsdev-responsive-design-site-developpeuse-web-bordeaux.jpg";
 </script>
 
-<div class="reviews">
+<div class="reviews" style='background-color: {bgColor}'>
     <ReviewCard boxColor="#F84B3B" boxType="image" reviewImage={MobileMockup}>
     </ReviewCard>
 
@@ -28,7 +30,7 @@
 
 <style>
     .reviews{
-        background-color: var(--color-background-primary);
+        /*background-color: var(--color-background-primary);*/
         padding: var(--spacing-2);
         display: flex;
         column-gap: var(--spacing-1);

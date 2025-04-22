@@ -13,6 +13,7 @@
   import Image from '../components/atoms/Image.svelte';
   import Text from '../components/atoms/Text.svelte';
 	import Reviews from '../components/organisms/Reviews.svelte';
+	import ProcessSteps from '../components/organisms/ProcessSteps.svelte';
 </script>
 
 <svelte:head>
@@ -53,4 +54,5 @@
 <MainProjects />
 <ShortPresentation> Je me présente </ShortPresentation>
 <Reviews />
+<ProcessSteps />
 <ArmsBloc />

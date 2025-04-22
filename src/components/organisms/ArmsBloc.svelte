@@ -13,7 +13,7 @@
       textTag='h2'
       class='text-preset-3 arms-block__text'
     >
-    Construisons ensemble des sites web modernes, attractifs et performants. Mettons un design impactant et une expérience utilisateur optimisée au service de votre entreprise.
+      Construisons ensemble des sites web modernes, attractifs et performants. Mettons un design impactant et une expérience utilisateur optimisée au service de votre entreprise.
     </Text>
   
     <Image
