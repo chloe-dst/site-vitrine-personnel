@@ -14,20 +14,20 @@
   </Text>
 
   <div class="cards-mix__cards hidden-phone">
-    <FormuleCard cardPaddingHeight=130 cardPaddingSides=170> UI/UX Design </FormuleCard>
-    <FormuleCard cardColor="#84170D" cardPaddingHeight=150 cardPaddingSides=115> Développement web </FormuleCard>
-    <FormuleCard cardColor="#E2594C" cardPaddingHeight=145 cardPaddingSides=125> Refonte / Optimisations </FormuleCard>
-    <FormuleCard cardColor="#EF8E85" cardPaddingHeight=80 cardPaddingSides=200> Maintenance / Formation </FormuleCard>
-    <FormuleCard cardColor="#854F4A" cardPaddingHeight=100 cardPaddingSides=125> DA / Graphisme </FormuleCard>
+    <FormuleCard cardPaddingHeight=130 cardPaddingSides=140> Branding & Web Design</FormuleCard>
+    <FormuleCard cardColor="#84170D" cardPaddingHeight=150 cardPaddingSides=85> Développement web <br>& Refonte </FormuleCard>
+    <FormuleCard cardColor="#E2594C" cardPaddingHeight=125 cardPaddingSides=85> Optimisations SEO <br> & Google My Business</FormuleCard>
+    <FormuleCard cardColor="#EF8E85" cardPaddingHeight=80 cardPaddingSides=200> Création contenu <br>& E-mailing </FormuleCard>
+    <FormuleCard cardColor="#854F4A" cardPaddingHeight=100 cardPaddingSides=125> Maintenance <br>& Formation </FormuleCard>
   </div>
 
   <div class="cards-mix__cards hidden-desktop">
-    <FormuleCard cardColor="#84170D" cardPaddingHeight=60 cardPaddingSides=70> Développement web </FormuleCard>
-    <FormuleCard cardPaddingHeight=45 cardPaddingSides=50> UI/UX<br> Design </FormuleCard>
-    <FormuleCard cardColor="#E2594C" cardPaddingHeight=45 cardPaddingSides=25> Refonte / <br> Optimisations </FormuleCard>
+    <FormuleCard cardColor="#84170D" cardPaddingHeight=60 cardPaddingSides=70> Développement web & Refonte </FormuleCard>
+    <FormuleCard cardPaddingHeight=45 cardPaddingSides=30> Web Design <br> & Branding </FormuleCard>
+    <FormuleCard cardColor="#E2594C" cardPaddingHeight=45 cardPaddingSides=25> Optimisations SEO <br> & Emailing </FormuleCard>
     <FormuleCard cardColor="#EF8E85" cardPaddingHeight=60 cardPaddingSides=40> Maintenance / <br> Formation </FormuleCard>
     <FormuleCard cardColor="#B1544C" cardPaddingHeight=35 cardPaddingSides=25> Création <br> contenu </FormuleCard>
-    <FormuleCard cardColor="#854F4A" cardPaddingHeight=35 cardPaddingSides=35> Graphisme / <br> Communication </FormuleCard>
+    <FormuleCard cardColor="#854F4A" cardPaddingHeight=35 cardPaddingSides=35> Fiche Google <br>My Business </FormuleCard>
   </div>
   
   <Margin marginTop="var(--spacing-5)">
@@ -61,7 +61,7 @@
     position: absolute;
     top: 100px;
     left: 470px;
-    transform: rotate(-22deg);
+    transform: rotate(-15deg);
     z-index: 1;
   }
 
@@ -75,7 +75,7 @@
   :global(.cards-mix__cards .formule-card:nth-child(4)){
     position: absolute;
     top: 420px;
-    left: 400px;
+    left: 200px;
     transform: rotate(10deg);
   }
 
@@ -87,7 +87,8 @@
   }
 
   :global(.link.cardsmix__link){
-    font-size: 26px;
+    padding-top: var(--spacing-1);
+    font-size: 22px;
     font-weight: var(--font-weight-light);
   }
 
