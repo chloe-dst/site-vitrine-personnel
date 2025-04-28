@@ -10,28 +10,26 @@
     Je crée des sites internet sur mesure conçus pour faire grandir votre activité
   </TitleIcon>
 
-  <Margin marginTop="175px" marginBottom="40px">
-    <div class="skills-tags">
-      <Tag >Développement web</Tag>
-      <Tag cardColor="#C9463A" class="hidden-phone">UI/UX Design</Tag>
-      <Tag cardColor="#C9463A" class="hidden-desktop">UI/UX Design</Tag>
-      <Tag cardColor="#AD4455">Expérience utilisateur</Tag>
-      <Tag cardColor="#F84B3B" class="hidden-phone">Design d'interface</Tag>
-      <Tag cardColor="#C9463A" class="hidden-phone">Refonte & Migration</Tag>
-      <Tag class="hidden-phone" cardColor="#F84B3B">Stratégie digitale</Tag>
-      <Tag class="hidden-desktop" cardColor="#F84B3B">Sites vitrine</Tag>
-      <Tag class="hidden-phone">Sites vitrine</Tag>
-      <Tag cardColor="#C9463A">E-commerce</Tag>
-      <Tag cardColor="#AD4455" class="hidden-phone">Création contenu</Tag>
-      <Tag>Formation</Tag>
-      <Tag cardColor="#AD4455" class="hidden-phone">Maintenance</Tag>
-      <Tag class="hidden-phone">Newsletter</Tag>
-      <Tag cardColor="#AD4455" class="hidden-desktop">Newsletter</Tag>
-      <Tag cardColor="#AD4455" class="hidden-phone">Optimisation SEO</Tag>
-      <Tag cardColor="#F84B3B" class="hidden-phone">Vitesse de chargement</Tag>
-      <Tag cardColor="#C9463A" class="hidden-phone">DA / Graphisme</Tag>
-    </div>
-  </Margin> 
+  <div class="skills-tags">
+    <Tag >Développement web</Tag>
+    <Tag cardColor="#C9463A" class="hidden-phone">Web Design</Tag>
+    <Tag cardColor="#C9463A" class="hidden-desktop">Web Design</Tag>
+    <Tag cardColor="#AD4455">Expérience utilisateur</Tag>
+    <Tag cardColor="#F84B3B" class="hidden-phone">Fiche Google My Business</Tag>
+    <Tag cardColor="#C9463A" class="hidden-phone">Refonte & Migration</Tag>
+    <Tag class="hidden-phone" cardColor="#F84B3B">Stratégie digitale</Tag>
+    <Tag class="hidden-desktop" cardColor="#F84B3B">Site vitrine</Tag>
+    <Tag class="hidden-phone">Site vitrine</Tag>
+    <Tag cardColor="#C9463A">E-commerce</Tag>
+    <Tag cardColor="#AD4455" class="hidden-phone">Création contenu</Tag>
+    <Tag>Formation</Tag>
+    <Tag cardColor="#AD4455" class="hidden-phone">Maintenance</Tag>
+    <Tag class="hidden-phone">Newsletter</Tag>
+    <Tag cardColor="#AD4455" class="hidden-desktop">Newsletter</Tag>
+    <Tag cardColor="#AD4455" class="hidden-phone">Optimisation SEO</Tag>
+    <Tag cardColor="#F84B3B" class="hidden-phone">Emailing</Tag>
+    <Tag cardColor="#C9463A" class="hidden-phone">DA / Graphisme</Tag>
+  </div> 
 
   <Link
     linkUrl='/contact'
@@ -57,6 +55,8 @@
     max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: var(--spacing-5);
+    margin-top: var(--spacing-5);
   }
 
   :global(.skills-tags .formule-card){
@@ -64,6 +64,10 @@
   }
   
   @media screen and (min-width: 780px) {
+    .skills-tags{
+      margin-top: 175px;
+    }
+
     :global(.tag-list .link){
       font-size: 20px;
       font-weight: 400;

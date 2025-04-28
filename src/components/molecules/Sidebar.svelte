@@ -1,15 +1,30 @@
 <script>
-  import Menu from "./Menu.svelte";
+  import { slide } from 'svelte/transition';
   import Image from "../atoms/Image.svelte";
   import Text from "../atoms/Text.svelte";
 
-  import Logo from '../../assets/img/logo_white.svg'
+  import Logo from '../../assets/img/logo_white.svg';
 
-  export let open = false
+  export let open = false;
+
+  const links = [
+    { href: '/', label: 'Accueil' },
+    { href: '/projets', label: 'Projets' },
+    { href: '/services', label: 'Services' },
+    { href: '/blog', label: 'Conseils' },
+    { href: '/contact', label: 'Contact' }
+  ];
 </script>
 
-<aside class="sidebar" class:open>
-  <Menu />
+{#if open}
+<aside class="sidebar" transition:slide={{ duration: 300 }}>
+  <nav class="nav">
+    {#each links as link}
+      <a href={link.href} on:click={() => open = false}>
+        {link.label}
+      </a>
+    {/each}
+  </nav>
 
   <div class="sidebar-footer block-center">
     <Image
@@ -28,6 +43,7 @@
     <a href="mailto:chloe.doustalet@gmail.com" class="block-center text-center">chloe.doustalet@gmail.com</a>
   </div>
 </aside>
+{/if}
 
 <style>
   .sidebar{
@@ -39,50 +55,29 @@
     color: var(--color-text-light);
   }
 
-  aside {
-  	left: -100%;
-  	transition: left 0.3s ease-in-out
-  }
-	
-  .open {
-  	left: 0
-  }
-
-  :global(.sidebar .nav){
+  .nav {
     margin-top: var(--spacing-3);
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  :global(.sidebar .nav a, .sidebar-footer a){
+  .nav a, .sidebar-footer a {
     color: var(--color-text-light) !important;
     text-decoration: none;
   }
 
-  :global(.sidebar .nav a){
+  .nav a {
     margin: var(--spacing-1) 0;
-  }
-
-  :global(.sidebar .nav a){
     font-size: var(--font-size-bigger);
     text-align: center;
   }
 
-  :global(.sidebar .nav button){
-    background-color: var(--color-background-secondary);
-    color: var(--color-primary);
-    font-size: var(--font-size-bigger);
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  .sidebar-footer {
+    margin: 150px 60px 0 60px;
   }
 
-  .sidebar-footer{
-    margin: 200px 60px 0 60px;
-  }
-
-  :global(.sidebar-footer p){
+  :global(.sidebar-footer p) {
     font-family: var(--font-family-tercary);
     font-size: 16px;
     line-height: 16px;
@@ -90,12 +85,12 @@
     margin-bottom: 5px;
   }
 
-  @media screen and (max-width: 750px){
-    :global(.sidebar .nav a){
+  @media screen and (max-width: 750px) {
+    .nav a {
       width: 100%;
     }
 
-    :global(.sidebar .nav a:nth-last-of-type(1)){
+    .nav a:nth-last-of-type(1) {
       margin-bottom: var(--spacing-5);
     }
   }

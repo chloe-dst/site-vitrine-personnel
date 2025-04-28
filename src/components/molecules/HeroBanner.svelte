@@ -18,9 +18,16 @@
 
     <div class="{headingImage ? 'hero-banner__title' : 'hero-banner__logo'}">
       <slot name='heading' />
-      {#if subheading}
+      {#if subheading && headerTransparent}
         <Text
           textTag='h1'
+          class='text-preset-3 text-center hero-banner__subheading'
+        >
+          <slot name='subheading' />
+        </Text>
+      {:else if subheading}
+        <Text
+          textTag='p'
           class='text-preset-3 text-center hero-banner__subheading'
         >
           <slot name='subheading' />
@@ -68,8 +75,16 @@
   }
 
   @media screen and (max-width: 900px){
-    :global(.hero-banner__title, .hero-banner__logo){
-      width: 40% !important;
+    .hero-banner {
+      margin-top: -20px;
+    }
+
+    :global(.hero-banner__logo){
+      width: 70% !important;
+    }
+
+    :global(.hero-banner__logo img){
+      max-width: 150px;
     }
 
     :global(.title-icon > .margin){
@@ -78,9 +93,9 @@
     }
 
     :global(.hero-banner__title h1) {
-      font-size: 110px;
-      margin-bottom: var(--spacing-1);
+      font-size: 80px;
       margin-top: var(--spacing-5);
+      margin-bottom: 0;
     }
 
     .hero-banner__title{

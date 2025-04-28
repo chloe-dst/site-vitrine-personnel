@@ -41,7 +41,7 @@
 
   @media screen and (max-width: 750px) {
     .blog-container{
-      margin: var(--spacing-4) var(--spacing-5);
+      margin: 0 var(--spacing-5) var(--spacing-4);
     }
   }
 </style>

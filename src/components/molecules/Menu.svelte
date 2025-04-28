@@ -1,7 +1,6 @@
 <script>
   import Link from "../atoms/Link.svelte";
   import Button from "../atoms/Button.svelte";
-
 </script>
 
 <ul class='nav'>
@@ -23,7 +22,7 @@
     linkUrl='/blog' 
     linkColor
   >
-    Blog
+    Conseils
   </Link>
 
   <Link
